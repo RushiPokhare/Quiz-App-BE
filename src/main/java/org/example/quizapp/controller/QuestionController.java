@@ -9,9 +9,9 @@ import org.example.quizapp.service.QuestionService;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/app")
 public class QuestionController {
     private final QuestionService questionService;
